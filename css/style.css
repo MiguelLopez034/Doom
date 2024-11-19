@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    background:#1a1a1a;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.left,
+.right {
+    width: 44%;
+    border: 1px solid rgb(162, 0, 255);
+    text-align: center;
+    padding: 30px;
+    min-height: 70vh;
+    background:#1a1a1a;
+    box-shadow: 0 4px 8px 0px rgb(148, 0, 0);
+}
+
+h2 {
+    color: rgb(148, 0, 0);
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+
+button {
+    background: transparent;
+    box-shadow:  0 4px 8px 0px #0000;
+    border-radius: 10px;
+    padding: 14px 30px;
+    color: #ffff;
+    width: 220px;
+    margin: 14px 20px;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+
+button:hover {
+    box-shadow:  0 4px 8px 0px rgb(162, 0, 255);
+    color: #000000;
+    background: rgb(148, 0, 0);
+
+}
+
+#Figura {
+     width: 250px;
+     height: 250px;
+     background: rgb(162, 0, 255);
+     margin: 80px auto;
+     transition: 1s;
+     position: relative
+}
+
+#contenedor .dia{
+    background: #ffff;
+}
+
+#panel_lateral.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: #000000;
+    z-index: 10;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+#panel_lateral{
+    position: absolute;
+    left: -400px;
+    transition: .4s;
+}
+
+#panel_superior.active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    z-index: 10;
+    transition: .4s;
+}
+
+#panel_superior {
+    position: absolute;
+    top: -400px;
+    transition: .4s;
+}
+
+.menu{
+    position: absolute;
+    left: 10%;
+    text-align: center;
+}
+
+.menu h2{
+    padding: 65px;
+}
+
+.menu button{
+    border-color: rgb(0, 255, 213);
+}
+
+.salir button{
+    width: 4%;
+    height: 10%;
+    border-color: rgb(0, 255, 213);
+}
+
+.estrella {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
